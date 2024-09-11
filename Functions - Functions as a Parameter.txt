@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Functions Assignment 2</title>
+</head>
+<body>
+<script>   
+  function double(num){
+    return num * 2;
+  };
+  function  tripple(num){
+    return num * 3;
+  };
+  function apply(num, func){
+    return func(num);
+  }
+  var result1 = apply(6, double);
+  console.log(result1);
+  var result2 = apply(6, tripple);
+  console.log(result2);
+</script>
+    
+</body>
+</html> 

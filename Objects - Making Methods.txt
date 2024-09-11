@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript Object Oriented Programming</title>
+</head>
+<body>
+   <script>
+       class Animal {
+           constructor(name, age) {
+               this.name = name;
+               this.age = age;
+           }
+
+           speak() {
+               console.log("Animal sound!");
+           }
+       }
+       class Dog extends Animal {
+           constructor(name, age, breed) {
+               super(name, age);
+               this.breed = breed
+           }
+           
+           speak() {
+               console.log("Woof!");
+           }
+       }
+       
+       const myDog = new Dog("Scout", 6, "Mixed breed");
+       myDog.speak();
+   </script>
+</body>
+</html> 

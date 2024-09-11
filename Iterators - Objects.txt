@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript Custom Iterator</title>
+</head>
+<body>
+   <script>
+       var Person = function(name, age) {
+           this.name = name;
+           this. age = age;
+       };
+       
+       Person.prototype[Symbol.iterator] = function() {
+           var properties = Object.values(this);
+           var index = 0;
+
+           return {
+               next: function() {
+                   return index < properties.length ?
+                       { value: properties[index++], done: false } :
+                       { done: true };
+               }
+         };
+    };
+    var people = [
+        new Person("John", 25),
+        new Person("Alice", 30)
+    ];
+
+    console.log("Iterating over people using custom iterator:");
+    for (var person of people) {
+        console.log(`Name: ${person.name}, Age: ${person.age}`);
+    }
+</script>
+
+</body>
+</html> 

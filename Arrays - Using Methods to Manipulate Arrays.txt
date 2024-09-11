@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays Assignment 1</title>
+</head>
+<body>
+    <script>
+        var fruits = [];
+
+        fruits.push("apple", "banana", "pear", "strawberry");
+        console.log(fruits);
+
+        var fruitsString = fruits.join(", ");
+        console.log(fruitsString);
+
+        var someFruits = fruits.slice(1, 4);
+
+        someFruits.splice(1, 1);
+
+        console.log(someFruits);
+
+        var moreFruits = ["papaya", "guava", "jackfruit"];
+
+        fruits = fruits.concat(moreFruits);
+
+        console.log(fruits);
+
+        var indexOfPapaya = fruits.indexOf("papaya");
+        console.log(indexOfPapaya);
+    </script>
+
+</body>
+</html> 
+
+
+***********************************************************************************************************
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Arrays Assignemt 1</title>
+  </head>
+  <body>
+    <script>
+      // Create an Array called fruits
+      let fruits = [];
+
+      // Use the push method
+      fruits.push("apple", "banana", "pear", "strawberry");
+      //Outputting fruits to console
+      console.log(fruits);
+      // outputs: ['apple', 'banana', 'pear', 'strawberry']
+
+      //Using the join method to join elements into a single string
+      console.log("Joined Fruits: " + fruits.join(", "));
+      //Outputs: Joined Fruits: apple, banana, pear, strawberry
+
+      // Use the slice funciton to create a new array that
+      // contains the elemtns form index 1 to 3 and stores it
+      // in a new array
+      let someFruits = fruits.slice(1, 3);
+      //console.log(someFruits); //output is ['banana', 'pear', 'strawberry'] and not apple since it is the 0 index
+      someFruits.splice(2, 2);
+
+      console.log(someFruits); // Removes the number 2 index of strawberry with output of ['banana', 'pear']
+
+      let moreFruits = ["papaya", "guava", "jackfruit"];
+      // console.log(moreFruits) output is ["papaya", "guava", "jackfruit"]
+      // concatinating fruits and moreFruits
+
+      fruits = fruits.concat(moreFruits);
+      console.log("Concatenated fruits array: ", fruits);
+      // Output: Concatenated fruits array:  (7) ['apple', 'banana', 'pear', 'strawberry', 'papaya', 'guava', 'jackfruit']
+
+      console.log("The index of papaya is: ", fruits.indexOf("papaya"))
+      // Output:The index of papaya is:  4
+    </script>
+  </body>
+</html> 
+
+
+
+
+
+
+

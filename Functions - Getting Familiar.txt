@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>JavaScript Functions Assignment 1</title>
+</head>
+<body>
+
+    <script>
+        // define greet function
+        function greet(name) {
+            console.log("Hello, " + name + "!");
+        }
+
+        // define add function
+        function add(num1, num2) {
+            return num1 + num2;
+        }
+
+        // call greet function with your name
+        greet("name here");
+
+        // call add function with two numbers and log result
+        console.log("Sum: " + add(5, 10));
+    </script>
+
+</body>
+</html> 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Functions Assignment 2</title>
+  </head>
+  <body>
+    <script>
+      //Declare an oject called person with the follwing properties: name, age, gender and email.
+      const person = {
+        name: 'JohnDoe',
+        age: 21,
+        gender: 'female',
+        email:'JohnDoe@gmail.com'
+      }
+
+      // print value of name to the console.
+      //console.log(person.name);
+
+      //Using dot notation add a new property called occupation to the person object
+      person.occupation = 'Doctor';
+      
+      //Using bracket notation to add a new property call address.
+      person["address"] = "123 apple st";
+
+      //console.log(person["address"]);
+
+      //using a for-in loop to iterate and print each property and value to the console.
+      for(key in person) {
+        console.log(key + ":" + person[key]);
+      }
+
+
+    </script>
+  </body>
+</html> 

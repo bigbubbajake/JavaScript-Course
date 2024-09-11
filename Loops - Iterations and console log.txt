@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterartion and console log</title>
+</head>
+
+<body>
+    <script>
+        for (let num = 1; num <= 10; num++) {  //start at the number 1 check if its less than or equal to 10 then increments
+            if (num != 5)//if its not equal to 5 it does the console log of the variable num
+                console.log(num);
+        }
+
+        /*-------------*/
+
+        let even = 0
+        while (even <= 10) {  // while even is less than or equal to 10 continue
+            even += 2 // add 2 to the variable
+            console.log(even);
+
+            if (even === 8) { //when even is equal to 8 then the while loop will break
+                break;
+            }
+        }
+
+        /*---------------*/
+
+        let list = ["word", "people", "hello", "", "world"];
+
+        for (let i = 0; i < list.length; i++) { //for loop starts with i = 0 then checks if i is less than list length if so it increments i
+            if (list[i]) { // if i is true, contains a non empty string, then continues to console log i from the list)
+                console.log(list[i]);
+            }
+        }
+    </script>
+
+</body>
+
+</html> 

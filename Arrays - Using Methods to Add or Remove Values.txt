@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays Assignment 1</title>
+</head>
+<body>
+    <script>
+        var numbers = [];
+        
+        numbers.push(1, 2, 3, 4);
+
+        numbers.pop();
+
+        numbers.shift();
+
+        numbers.unshift(5);
+
+        for (var i = 0; i < numbers.length; i++) {
+            console.log(numbers[i]);
+        }
+    </script>
+
+</body>
+</html> 
+
+
+--------------------------------------------------------------------------
+
+  let numbers = [];
+        numbers.push(10, 20, 30, 40);
+        numbers.pop(40);
+        numbers.shift(10);
+        numbers.unshift(5);
+
+        for (let i = 0; i < numbers.length; i ++) {
+        console.log(numbers[i]);
+        }

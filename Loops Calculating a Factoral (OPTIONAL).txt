@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function isEven(int){
+            if (int % 2 == 0) {
+                return true;
+            } else {
+                return false;
+            }
+            }
+            console.log(isEven(100));
+            console.log(isEven(21));
+
+        function factorial(num){
+            if(num==0)
+                return 1;
+            else
+                return num*factorial(num-1);
+        }   
+            let num = 10;
+            let result = factorial(num);
+
+           console.log(result);
+
+        
+        for (let i = 1; i <= 20; i++) {
+        const isEvenResult = isEven(i);
+        const factorialResult = factorial(i);
+        console.log(`${i}, ${isEvenResult}, Factorial: ${factorialResult}`);
+        }
+
+
+
+
+    </script>
+</body>
+</html> 

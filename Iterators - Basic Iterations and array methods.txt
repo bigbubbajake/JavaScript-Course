@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript Iterators</title>
+</head>
+<body>
+   <script>
+       var numbers = [1, 2, 3, 4, 5];
+     
+       console.log("Numbers using forEach:");
+       numbers.forEach(function(number) {
+           console.log(number);
+       });
+
+       var squaredNumbers = numbers.map(function(number) {
+            return number * number;
+       });
+       console.log("\nSquared numbers using map:");
+       console.log(squaredNumbers);
+
+       var evenNumbers = numbers.filter(function(number) {
+           return number % 2 === 0;
+       });
+       console.log("\nEven numbers using filter:");
+       console.log(evenNumbers);
+
+       var sum = numbers.reduce(function(accumulator, currentNumber) {
+           return accumulator + currentNumber;
+       }, 0);
+       console.log("\nSum of numbers using reduce:");
+       console.log(sum);
+   </script>
+</body>
+</html> 
+
+
+*******************************************************************************************************************
+
+
+      //Declaring an array of numbers
+      const numbers = [10,21,30,41,50];
+
+      //Using a forEach to print each number to console
+      console.log("Original array: ")
+      numbers.forEach(number => console.log(number));
+      //Using the forEach i call back the array in ascending index
+
+      //using map 
+      const squaredNumbers = numbers.map(number => number * number);
+      console.log("Numbers Squared: ");
+      console.log(squaredNumbers);
+      //I take the numbers using the map function and create a new array of numbers
+      //from the original numbers and i multiply each one by itself 
+      //thereby squaring each number and then log that to console
+
+      //using function
+      const evenNumbers = numbers.filter(number => number % 2 === 0 );
+      console.log("Only Even Numbers")
+      console.log(evenNumbers)
+      //Using filter i use the old array as arguments and return the new array 
+      // as only even number by using the remainder operator and strict to 0
+      // thus outputting : 10,30,50 leaving out 21 and 41
+
+      //using reduce to calculate the sum of all
+      const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+      console.log("The Sum of all numbers is:")
+      console.log(sum);// Output: 152
+      //using the reduce funtion take numbers as the original arguament turn 
+      // and turn them all into a single result

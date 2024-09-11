@@ -1,0 +1,40 @@
+// JavaScript code only
+
+// function to determine larger of two numbers
+function isLarger(num1, num2) {
+    if (num1 > num2) {
+        return num1;
+    } else if (num2 > num1) {
+        return num2; 
+    } else {
+        return num1; // equal to num2
+    }
+}
+
+// function to check safe range for airspeed 
+ function isSafeAirspeed(airspeed) {
+    return (airspeed >=184 && airspeed <= 583);
+}
+
+// function to confirm age for event registration
+function confirmAge(age) {
+    if (age < 0) {
+        return "Invalid age.";
+    } else if (age < 13) {
+        return "Too young to participate."
+    } else if (age >= 13 && age <= 17) 
+        return " You are allowed to participate.";
+    } else {
+        return "You are too old to participate.";
+    }
+}
+
+console.log(isLarger(5, 10)); // example 1
+console.log(isLarger(20, 8)); // example 2
+
+console.log(isSafeAirspeed(200)); // example 3
+console.log(isSafeAirspeed(150)); // example 4
+
+console.log(confirmAge(12)); // example 5
+console.log(confirmAge(15)); // example 6
+console.log(confirmAge(20)); // example 7 

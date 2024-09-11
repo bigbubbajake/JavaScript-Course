@@ -1,0 +1,73 @@
+//Creating a function named isLarger
+function isLarger(num1, num2){
+  if (num1 === num2){
+    return num1; // returns num1 because they are both equal
+  }
+  return num1 > num2 && num1 || num2;
+}
+
+//function isLarger(num1, num2) {
+//    if (num1 > num2) {
+//        return num1;
+//    } else if (num2 > num1) {
+//        return num2; 
+//    } else {
+//        return num1; // equal to num2
+//    }
+//}
+
+
+//Demonstrate isLarger function
+console.log("The largest of 5 and 10:", isLarger(10.1,10)); //Output 10.1
+console.log("Result of 8 of 8:", isLarger(8,8)); //Outputs 8
+
+//console.log(isLarger(5, 10)); // example 1
+//console.log(isLarger(20, 8)); // example 2
+
+
+function isSafeAirSpeed(airspeed){
+  if (airspeed >= 184 && airspeed <= 583){
+    return "The airspeed is safe."; // reteurns if the airpseed is ins between or equal to 184 and 583
+  } else { 
+    return "The airspeed if not safe.";//return if the airspeed is greater than or less than defined 184 and 583.
+  }  
+}
+
+// declaring constant airspeeds to be called
+const airspeed1 = 328;
+const airspeed2 = 126;
+
+//demonstrate of the isSafeAirSpeed function using true and false values.
+console.log("Result of 328:", isSafeAirSpeed(airspeed1));
+console.log("Result of 126:", isSafeAirSpeed(airspeed2));
+
+function confirmAge(age) {
+  if (age <= 0) {
+    return "Invalid age.";
+  } else if (age < 13) {
+    return "Too young to participate.";
+  } else if (age <= 17) {
+    return "You are allowed to participate.";
+  } else {
+    return "Too old to participate.";
+  }
+}
+
+// function to confirm age for event registration
+//function confirmAge(age) {
+//    if (age < 0) {
+//        return "Invalid age.";
+//    } else if (age < 13) {
+//        return "Too young to participate."
+//    } else if (age >= 13 && age <= 17) 
+//        return " You are allowed to participate.";
+//    } else {
+//        return "You are too old to participate.";
+//    }
+//}
+
+// Demonstration of confirmAge function
+console.log("Result:", confirmAge(8)); // Output: Too young to participate.
+console.log("Result:", confirmAge(16)); // Output: You are allowed to participate.
+console.log("Result:", confirmAge(19)); // Output: Too old to participate.
+console.log("Result:", confirmAge(-5)); // Output: Invalid age. 
